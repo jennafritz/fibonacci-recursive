@@ -1,6 +1,13 @@
 function fibonacci(n) {
   // type your code here
+  if(n < 2){
+    return n
+  }
+
+  return fibonacci(n - 1) + fibonacci(n - 2)
 }
+
+
 
 if (require.main === module) {
   // add your own tests in here
@@ -21,4 +28,8 @@ if (require.main === module) {
 module.exports = fibonacci;
 
 // Please add your pseudocode to this file
+  // unless n is less than 2 
+  // or until the nth element is reached
+  // calculate the fibonacci value
+
 // And a written explanation of your solution
